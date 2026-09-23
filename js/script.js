@@ -434,7 +434,7 @@ window.toggleChat=function(){
   if(c) c.classList.toggle('open');
 };
 const botReplies=[
-  {keywords:['giá','bao nhiêu','phòng'],reply:'Dạ, bên em có 4 hạng phòng:\n• Standard Cloud (3 căn): 700k-1.100k\n• Premium S1 — Nhà gỗ Bohemian (2 căn): 900k-1.300k\n• Premium S2 — Mái dốc Châu Âu (2 căn): 900k-1.300k\n• Duet Family (2 căn): 1.700k-2.400k'},
+  {keywords:['giá','bao nhiêu','phòng'],reply:'Dạ, bên em có 4 hạng phòng:\n• Standard Cloud (5 căn): 800k-1.300k\n• Premium S1 — Nhà gỗ Bohemian (3 căn): 1.300k-1.700k\n• Premium S2 — Mái dốc Châu Âu (3 căn): 1.300k-1.700k\n• Duet Family (5 căn): 1.000k-2.400k'},
   {keywords:['combo','trọn gói'],reply:'Dạ bên em có COMBO 2N1Đ chỉ từ 899.000đ/khách:\n• Ngày thường: 899k\n• T6-CN: 949k\n• T7 đỉnh điểm: 1.099k\nĐã gồm Xe Cabin đôi khứ hồi + Phòng + Bữa sáng + Bộ đặc quyền.'},
   {keywords:['địa chỉ','ở đâu'],reply:'Chug Amélie ở xã Tà Xùa, huyện Bắc Yên, Sơn La ạ. Gọi 0325 292 907 để được chỉ đường nhé!'},
   {keywords:['đặt phòng','book'],reply:'Anh/chị bấm nút "Đặt phòng" trên web hoặc gọi hotline 0325 292 907 ạ!'},
@@ -463,10 +463,10 @@ window.sendMsg=function(){
 
 /* ========== ROOMS AVAILABILITY ========== */
 const ROOM_CAPACITY={
-  'Standard Cloud Room':3,
-  'Premium — Nhà gỗ mộc nghệ thuật':2,
-  'Premium — Mái dốc gác mái Châu Âu':2,
-  'Duet Family Cloud Suite':2
+  'Standard Cloud Room':5,
+  'Premium — Nhà gỗ mộc nghệ thuật':3,
+  'Premium — Mái dốc gác mái Châu Âu':3,
+  'Duet Family Cloud Suite':5
 };
 const ROOM_KEYS={
   'Standard Cloud Room':'standard',

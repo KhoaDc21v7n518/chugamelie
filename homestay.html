@@ -51,13 +51,13 @@
 
 <!-- BỘ LỌC PHÒNG -->
 <div class="rooms-filter-bar">
-<button class="filter-chip active" data-filter="all" onclick="filterRooms(this)">🏠 Tất cả <span class="chip-count">9</span></button>
+<button class="filter-chip active" data-filter="all" onclick="filterRooms(this)">🏠 Tất cả <span class="chip-count">16</span></button>
 <button class="filter-chip" data-filter="available" onclick="filterRooms(this)">✨ Trống hôm nay <span class="chip-count" id="availableCount">0</span></button>
 <button class="filter-chip" data-filter="flash" onclick="filterRooms(this)">⚡ Flash deal</button>
-<button class="filter-chip" data-filter="standard" onclick="filterRooms(this)">🛏️ Standard <span class="chip-count">3</span></button>
-<button class="filter-chip" data-filter="premium" onclick="filterRooms(this)">🌿 Premium S1 <span class="chip-count">2</span></button>
-<button class="filter-chip" data-filter="premium2" onclick="filterRooms(this)">⭐ Premium S2 <span class="chip-count">2</span></button>
-<button class="filter-chip" data-filter="family" onclick="filterRooms(this)">👨‍👩‍👧 Family <span class="chip-count">2</span></button>
+<button class="filter-chip" data-filter="standard" onclick="filterRooms(this)">🛏️ Standard <span class="chip-count">5</span></button>
+<button class="filter-chip" data-filter="premium" onclick="filterRooms(this)">🌿 Premium S1 <span class="chip-count">3</span></button>
+<button class="filter-chip" data-filter="premium2" onclick="filterRooms(this)">⭐ Premium S2 <span class="chip-count">3</span></button>
+<button class="filter-chip" data-filter="family" onclick="filterRooms(this)">👨‍👩‍👧 Family <span class="chip-count">5</span></button>
 </div>
 
 <div class="filter-result" id="filterResult">Đang hiển thị <strong>tất cả</strong> hạng phòng</div>
@@ -65,7 +65,7 @@
 <div class="rooms-grid" id="roomsGrid">
 
 <!-- ===== Standard Cloud Room ===== -->
-<div class="room-card reveal" data-room="standard" data-total="3" data-price="700000" onclick="openHomestayGallery('std')" style="cursor:pointer">
+<div class="room-card reveal" data-room="standard" data-total="5" data-price="800000" onclick="openHomestayGallery('std')" style="cursor:pointer">
 <div class="room-img">
 <img src="images/room-standard.jpg" alt="Standard Cloud Room">
 <span class="badge-premium" style="background:linear-gradient(135deg,#7eb8d4,#5a9bbf)">☁️ STANDARD</span>
@@ -74,11 +74,11 @@
 </div>
 <div class="room-body">
 <h3>Standard Cloud Room</h3>
-<div class="room-price">700.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 1.100.000đ / đêm</span></div>
+<div class="room-price">800.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 1.300.000đ / đêm</span></div>
 <p class="room-desc">Phòng cơ bản phong cách Korean Cozy, trần vòm gỗ thông sáng màu. Vách kính cường lực kịch trần hướng ra thung lũng mây. Sofa pastel check-in xinh xắn.</p>
 <div class="room-status-info" data-status="standard"><span class="status-dot"></span><span class="status-text">Đang kiểm tra...</span></div>
 <div class="room-tags">
-<span class="tag-rooms">🛏️ <span class="available-rooms">3</span>/3 căn trống</span>
+<span class="tag-rooms">🛏️ <span class="available-rooms">5</span>/5 căn trống</span>
 <span class="tag">2 người</span>
 <span class="tag">View mây</span>
 </div>
@@ -87,7 +87,7 @@
 </div>
 
 <!-- ===== Premium S1 ===== -->
-<div class="room-card premium-card reveal" data-room="premium" data-total="2" data-price="900000" onclick="openHomestayGallery('p1')" style="cursor:pointer">
+<div class="room-card premium-card reveal" data-room="premium" data-total="3" data-price="1300000" onclick="openHomestayGallery('p1')" style="cursor:pointer">
 <div class="room-img">
 <img src="images/room-premium-2.jpg" alt="Premium Style 1">
 <span class="badge-premium">🌿 STYLE 1</span>
@@ -96,11 +96,11 @@
 </div>
 <div class="room-body">
 <h3>Premium — Nhà gỗ mộc nghệ thuật</h3>
-<div class="room-price">900.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 1.300.000đ / đêm</span></div>
+<div class="room-price">1.300.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 1.700.000đ / đêm</span></div>
 <p class="room-desc">Chalet mộc mạc pha Bohemian — trần gỗ tối màu ấm cúng, thảm dệt thổ cẩm khổ lớn, sàn phòng tắm gạch bông hoài cổ. Không gian mở kịch trần 2 mặt tiền view mây.</p>
 <div class="room-status-info" data-status="premium"><span class="status-dot"></span><span class="status-text">Đang kiểm tra...</span></div>
 <div class="room-tags">
-<span class="tag-rooms premium-tag">🌿 <span class="available-rooms">2</span>/2 căn trống</span>
+<span class="tag-rooms premium-tag">🌿 <span class="available-rooms">3</span>/3 căn trống</span>
 <span class="tag">2 người</span>
 <span class="tag">Bohemian Chalet</span>
 </div>
@@ -109,7 +109,7 @@
 </div>
 
 <!-- ===== Premium S2 ===== -->
-<div class="room-card premium-card reveal" data-room="premium2" data-total="2" data-price="900000" onclick="openHomestayGallery('p2')" style="cursor:pointer">
+<div class="room-card premium-card reveal" data-room="premium2" data-total="3" data-price="1300000" onclick="openHomestayGallery('p2')" style="cursor:pointer">
 <div class="room-img">
 <img src="images/room-premium.jpg" alt="Premium Style 2">
 <span class="badge-premium">⭐ STYLE 2</span>
@@ -118,11 +118,11 @@
 </div>
 <div class="room-body">
 <h3>Premium — Mái dốc gác mái Châu Âu</h3>
-<div class="room-price">900.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 1.300.000đ / đêm</span></div>
+<div class="room-price">1.300.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 1.700.000đ / đêm</span></div>
 <p class="room-desc">Warm Luxe Rustic — mái vòm dốc ốp gỗ nâu trầm sang trọng, đèn chùm Tân cổ điển. Vách kính kịch trần ôm trọn view mây 270°, ban công lưới ngoài trời siêu chill.</p>
 <div class="room-status-info" data-status="premium2"><span class="status-dot"></span><span class="status-text">Đang kiểm tra...</span></div>
 <div class="room-tags">
-<span class="tag-rooms premium-tag">⭐ <span class="available-rooms">2</span>/2 căn trống</span>
+<span class="tag-rooms premium-tag">⭐ <span class="available-rooms">3</span>/3 căn trống</span>
 <span class="tag">2 người</span>
 <span class="tag">Mái dốc Châu Âu</span>
 </div>
@@ -130,8 +130,8 @@
 </div>
 </div>
 
-<!-- ===== Duet Family Cloud Suite — ĐÃ THÊM GALLERY 3 ẢNH ===== -->
-<div class="room-card reveal" data-room="family" data-total="2" data-price="1700000" onclick="openHomestayGallery('fam')" style="cursor:pointer">
+<!-- ===== Duet Family Cloud Suite ===== -->
+<div class="room-card reveal" data-room="family" data-total="5" data-price="1000000" onclick="openHomestayGallery('fam')" style="cursor:pointer">
 <div class="room-img">
 <img src="images/room-family.jpg" alt="Duet Family Cloud Suite">
 <span class="badge-best">GIA ĐÌNH</span>
@@ -140,11 +140,11 @@
 </div>
 <div class="room-body">
 <h3>Duet Family Cloud Suite</h3>
-<div class="room-price">1.700.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 2.400.000đ / đêm</span></div>
+<div class="room-price">1.000.000đ <span style="font-size:.85rem;color:#8a7a68;font-weight:400">- 2.400.000đ / đêm</span></div>
 <p class="room-desc">Phòng đôi gia đình / nhóm bạn, 2 giường đôi lớn trên bục gỗ. Sân hiên Glamping riêng với ghế xếp dã ngoại.</p>
 <div class="room-status-info" data-status="family"><span class="status-dot"></span><span class="status-text">Đang kiểm tra...</span></div>
 <div class="room-tags">
-<span class="tag-rooms">👨‍👩‍👧 <span class="available-rooms">2</span>/2 căn trống</span>
+<span class="tag-rooms">👨‍👩‍👧 <span class="available-rooms">5</span>/5 căn trống</span>
 <span class="tag">4-5 người</span>
 <span class="tag">Sân hiên riêng</span>
 </div>
@@ -228,7 +228,7 @@
 </div>
 </div>
 
-<!-- ========== GALLERY DUET FAMILY - 3 ẢNH ========== -->
+<!-- ========== GALLERY DUET FAMILY ========== -->
 <div class="modal-overlay" id="famGallery" style="background:rgba(0,0,0,.92);backdrop-filter:blur(8px)">
 <div style="position:relative;max-width:1100px;width:95%;text-align:center">
 <button onclick="closeHomestayGallery()" style="position:absolute;top:-55px;right:0;background:rgba(255,255,255,.2);border:none;color:#fff;width:44px;height:44px;border-radius:50%;font-size:1.4rem;cursor:pointer;z-index:10">✕</button>
@@ -280,12 +280,8 @@ let p1Index = 0;
 const p2Images = ['images/premium-2-1.jpg','images/premium-2-2.jpg','images/premium-2-3.jpg'];
 let p2Index = 0;
 
-// ===== GALLERY DUET FAMILY — 3 ẢNH =====
-const famImages = [
-  'images/room-family.jpg',
-  'images/family-2.png',
-  'images/family-3.png'
-];
+// ===== GALLERY DUET FAMILY =====
+const famImages = ['images/room-family.jpg','images/family-2.png','images/family-3.png'];
 let famIndex = 0;
 
 function openHomestayGallery(type) {
